@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2css/2main.css"
+</head>
+<body>
+
+
+  <button id="about-btn">About</button>
+<div id="about-dialog">
+  <p>SoundScaped is a website that features a collection of interesting and unique sound textures and ambiences recorded around Toronto. The curator describes themselves as a sound detective who captures hidden sounds in daily life. The collection includes sounds like streetcars and leaves rustling in the wind, and is suitable for sound designers or anyone interested in audio. The website invites visitors to explore the collection and reminds them to use headphones to avoid disturbing the neighbors.</p>
+  <button id="close-btn">Close</button>
+</div>
+
+    <script>
+     const aboutBtn = document.getElementById('about-btn');
+const aboutDialog = document.getElementById('about-dialog');
+const closeBtn = document.getElementById('close-btn');
+
+aboutBtn.addEventListener('click', function() {
+  aboutDialog.style.display = 'flex';
+  aboutBtn.style.display = 'none';
+});
+
+closeBtn.addEventListener('click', function() {
+  aboutDialog.style.display = 'none';
+  aboutBtn.style.display = 'block';
+});
+
+    </script>
+
+
+
+    <div class="dialog">
+        <div class="dialog-message">
+          For the best experience please connect to an external audio device (Earphones, Headphones, Speakers) before proceeding.
+        </div>
+        <div class="dialog-close">
+          I'm plugged in!
+        </div>
+      </div>
+
+      <script>
+        // JavaScript code to dismiss the pop-up box when the user clicks on the close button
+        const dialog = document.querySelector('.dialog');
+        const dialogClose = document.querySelector('.dialog-close');
+        dialogClose.addEventListener('click', () => {
+          dialog.style.display = 'none';
+        });
+
+        dialogClose.addEventListener('click', () => {
+  dialog.style.display = 'none';
+  document.body.classList.remove('dialog-open');
+});
+
+      </script>
+
+  
+<div class="container">
+    <div class="grid-item">
+     <img src="images/1.jpg">
+        <div class="overlay-1">
+         <div class="overlay-1 audio-overlay">
+           <div class="overlay-content-1">
+            <h2>3AM on Yonge Street</h2>
+             <h3>Date : 3 March 2023<br>
+                Time : 3:17 AM<br>
+                Location : Somewhere on Yonge Street<br></h3>
+                <p>The sound captured from the inside of an uber on my way home after a studio session at 3AM on the long well lit midnight skyline on Yonge Street.</p>
+            <audio id= "audio-1" controls>
+              <source src="audio files/1 3am on yonge.mp3" type="audio/mpeg">
+
+            </audio>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="grid-item">
+      <img src="images/2.jpg">
+      <div class="overlay-2">
+        <div class="overlay-2 audio-overlay">
+        <div class="overlay-content-2">
+          <h2>Forever constructing LRT</h2>
+          <h3>Date : 5 March 2023<br>
+            Time: 8:49 AM<br>
+            Location : Eglinton</h3>
+            <p>Construction cranes, power tools, heavy material and interesting music played from the construction site right across the street where I live that wakes me up everyday and probably will for the rest of my life.</p>
+            <audio id= "audio-2" controls>
+            <source src="audio files/2 construction.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="grid-item">
+        <img src="images/3.jpg">
+        <div class="overlay-1">
+          <div class="overlay-1 audio-overlay">
+          <div class="overlay-content-1">
+            <h2>Sounds beyond the Harbour-Front</h2>
+            <h3>Date: 4 March 2023<br>
+                Time: 4:01 PM<br>
+                Location: Harbourfront</h3>
+                <p> The peacful waves of the water at the harbourfront along with chatter from the people and animals around. </p>
+                <audio id= "audio-3" controls>
+              <source src="audio files/3 harbourfront.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+         </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <img src="images/4.jpg">
+        <div class="overlay-2">
+          <div class="overlay-2 audio-overlay">
+          <div class="overlay-content-2">
+            <h2>Rainy Night</h2>
+            <h3>Date: 4 March 2023<br>
+                Time: 11:52 PM<br>
+                Location: Balcony of the building I live in</h3>
+                <p>A display of Canadas extreme weather condition, showcasing the heavy rain, and strong cold winds right after a snowstorm covered almost the entirety of this city in heaps of snow.</p>
+                <audio id= "audio-4" controls>
+              <source src="audio files/4 rainy night.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+      <div class="grid-item">
+        <img src="images/5.jpg">
+        <div class="overlay-2">
+          <div class="overlay-2 audio-overlay">
+          <div class="overlay-content-2">
+            <h2>Second-Hand Hustle</h2>
+            <h3>Date: 7 March 2023<br>
+                Time: 11:15 AM<br>
+                Location: Kensginton Market</h3>
+                <p> The sounds recorded from my trip to a thrift store filled with people. Good vibes and greedy people with good music selection in the back to improve the shopping experience.</p>
+                <audio id= "audio-5" controls>
+              <source src="audio files/5 thrift store.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid-item">
+        <img src="images/6.jpg">
+        <div class="overlay-1">
+          <div class="overlay-1 audio-overlay">
+          <div class="overlay-content-1">
+            <h2>Daytime Playtime</h2>
+            <h3>Date: 7 March 2023<br>
+                Time: 10:46 AM<br>
+                Location: Grange Park</h3>
+                <p>Nothing beats the atmosphere of a sunny day at a park filled with everyone enjoying the day without a care in the world.</p>
+                <audio id= "audio-6" controls>
+              <source src="audio files/6 park playtime.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+      <div class="grid-item">
+        <img src="images/7.jpg">
+        <div class="overlay-2">
+          <div class="overlay-2 audio-overlay">
+          <div class="overlay-content-2">
+            <h2>The TTC Experience</h2>
+            <h3>Date: 7 March 2023<br>
+                Time: 11:15 AM<br>
+                Location: TTC station</h3>
+                <p>A recording of me waiting and getting into the Yellow Line TTC train that I take everyday hoping to reach my destination but not knowing what else will happen on my journey.</p>
+                <audio id= "audio-7" controls>
+              <source src="audio files/7 ttc.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+      <div class="grid-item">
+        <img src="images/8.jpg">
+        <div class="overlay-1">
+          <div class="overlay-1 audio-overlay">
+          <div class="overlay-content-1">
+            <h2>Grillmaster</h2>
+            <h3>Date: 6 March 2023<br>
+                Time: 6:38 PM<br>
+                Location: Grazie Kitchen</h3>
+                <p>The hustling sounds of food being cooked across a kitchen along with how chefs communicate with each other and the waiters and servers to run their restaurant smoothly.</p>
+                <audio id= "audio-8" controls>
+              <source src="audio files/8 grillmaster.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+        </div>
+      </div>
+  </div>
+  
+<script>
+  // Get all the audio overlays
+const audioOverlays = document.querySelectorAll('.audio-overlay');
+
+// Loop through each overlay and add a mouseleave event listener
+audioOverlays.forEach((overlay) => {
+  const audio = overlay.querySelector('audio'); // Get the audio element inside the overlay
+  overlay.addEventListener('mouseleave', () => {
+    audio.pause(); // Pause the audio when the mouse leaves the overlay
+  });
+});
+</script>
+
+      
+</body>
+</html>
